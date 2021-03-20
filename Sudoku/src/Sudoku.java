@@ -51,11 +51,11 @@ public class Sudoku {
     //select value to insert into sudoku Array
     private int selectValue(int i, int j) {
 
-        //check row to see if value is already present
+        //check row to see if value is already present and set flag as 1 for the used value
         for (int row = 0; row < i; row++)
             valueFlag[sudoku[row][j] - 1] = 1;
 
-        //check col to see if value is already present
+        //check col to see if value is already present and set flag as 1 for the used value
         for (int col = 0; col < j; col++)
             valueFlag[sudoku[i][col] - 1] = 1;
 
